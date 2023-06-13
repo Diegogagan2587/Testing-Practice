@@ -1,4 +1,4 @@
-const { sum, stringLength } = require( './main' );
+const { sum, stringLength, reverseString } = require( './main' );
 
 it ('result of the sum', ()=>{
     expect (sum(1,2)).toBe(3)
@@ -21,3 +21,9 @@ it ('return error if strin is more than 10', ()=>{
         ()=> stringLength('12345678901')
      ).toThrow('Lenght is less than 1 or more than 10');
 })
+
+//task 2
+
+it ( 'check if string abcd is reversed', () => {
+    expect ( reverseString('abcd') ).toBe('dcba')
+} ) 

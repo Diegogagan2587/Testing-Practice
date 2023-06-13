@@ -6,12 +6,18 @@ it ('result of the sum', ()=>{
 
 // Task 1
 
-it ('stringLenght counter ', ()=>{
+it ('return 4 if string length is 4', ()=>{
     expect ( stringLength('abcd') ).toBe(4)
 })
-//stringLength was wrapped by an arrow function to evaluate properly when the function throws an error;
-it ('stringLenght counter ', ()=>{
+
+it ('return error if string is less than 1 ', ()=>{
     expect ( 
         ()=> stringLength('')
+     ).toThrow('Lenght is less than 1 or more than 10');
+})
+
+it ('return error if strin is more than 10', ()=>{
+    expect ( 
+        ()=> stringLength('12345678901')
      ).toThrow('Lenght is less than 1 or more than 10');
 })

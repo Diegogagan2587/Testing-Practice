@@ -18,7 +18,6 @@ function stringLength(string){
 /*    ---- Ends Task 1 ----    */ 
 /*    ---- Start Task 2 ----    */ 
 function reverseString(string){
-        //convertimos a array para poder manipular
         let strFromArr = [...string];
         let result = [];
 

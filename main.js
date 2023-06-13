@@ -6,7 +6,15 @@ function sum (a,b){
 function stringLength(string){
     console.log('runing stringLength')
     console.log('string to check =',string)
-    let result = string.length;
+    length = string.length;
+    //code bellow
+    if(length >= 1 && length <= 10) {
+        result = length;
+    } else {
+        throw new Error ("Lenght is less than 1 or more than 10");
+    }
+
+    //code upwards
     console.log(result);
     return result;
 };

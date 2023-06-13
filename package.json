@@ -1,0 +1,23 @@
+{
+  "name": "testing-practice",
+  "version": "1.0.0",
+  "description": "In this practice, I will write a few test for JavaScritp functions using the Jest Librarie, I will also to stick to AAA Pattern and TDD approach.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diegogagan2587/Testing-Practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Diegogagan2587/Testing-Practice/issues"
+  },
+  "homepage": "https://github.com/Diegogagan2587/Testing-Practice#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}

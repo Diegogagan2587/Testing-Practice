@@ -32,8 +32,36 @@ function reverseString(string){
 }
 /*    ---- Ends Task 2 ----    */ 
 /*    ---- Start Task 3 ----    */ 
+class Calculator {
+    constructor (result) {
+        this.result = result;
+        return this.result;
+    }
+
+    add(a,b){
+        this.result = a+b;
+        return this.result;
+    }
+
+    substrack(a,b) {
+        this.result = a-b;
+        return this.result;
+    }
+
+    divide(a,b){
+        this.result = a/b;
+        return this.result;
+    }
+
+    multiply(a,b){
+        this.result = a*b;
+        return this.result;
+    }
+}
+
+const calculator = new Calculator;
 /*    ---- Ends Task 3 ----    */ 
 /*    ---- Start Task 4 ----    */ 
 /*    ---- Ends Task 4 ----    */ 
 
-module.exports = { stringLength, sum, reverseString }
+module.exports = { stringLength, sum, reverseString, calculator }

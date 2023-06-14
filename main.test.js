@@ -1,4 +1,4 @@
-const { sum, stringLength, reverseString, calculator } = require( './main' );
+const { sum, stringLength, reverseString, calculator, capitalize } = require( './main' );
 
 it ('result of the sum', ()=>{
     expect (sum(1,2)).toBe(3)
@@ -84,4 +84,10 @@ describe('multiply',()=>{
     test('multiply 1 * 9 = 9',() => {
         expect(calculator.multiply(1,9)).toBe(9);
     })
+})
+
+//task 4
+
+test ('capitalize welcome should return = Welcome',()=>{
+    expect( capitalize('welcome') ).toBe('Welcome');
 })

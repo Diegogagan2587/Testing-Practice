@@ -62,6 +62,14 @@ class Calculator {
 const calculator = new Calculator;
 /*    ---- Ends Task 3 ----    */ 
 /*    ---- Start Task 4 ----    */ 
+
+function capitalize(string){
+    let temp = [...string]
+    temp[0] = temp[0].toUpperCase();
+    temp = temp.join('');
+    return temp;
+}
+
 /*    ---- Ends Task 4 ----    */ 
 
-module.exports = { stringLength, sum, reverseString, calculator }
+module.exports = { stringLength, sum, reverseString, calculator, capitalize }
